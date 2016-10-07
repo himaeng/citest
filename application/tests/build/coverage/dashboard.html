@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Users/him_aeng/Sites/CITest/application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">/Users/him_aeng/Sites/CITest/application</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="libraries/Seeder.php.html#11">Seeder</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#22">Ion_auth</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Temperature_converter.php.html#3">Temperature_converter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#22">Ion_auth_model</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/News_model.php.html#6">News_model</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#3">Auth</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#4">Bcrypt</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#6">News</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#6">Dbfixture</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Pages.php.html#3">Pages</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Welcome.php.html#4">Welcome</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#12">Format</a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#17">REST_Controller</a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#19">Example</a></td><td class="text-right">68%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="models/Ion_auth_model.php.html#22">Ion_auth_model</a></td><td class="text-right">71022</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#17">REST_Controller</a></td><td class="text-right">28839</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#3">Auth</a></td><td class="text-right">10302</td></tr>
+       <tr><td><a href="libraries/Format.php.html#12">Format</a></td><td class="text-right">3362</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#22">Ion_auth</a></td><td class="text-right">2652</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#4">Bcrypt</a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="controllers/News.php.html#6">News</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/News_model.php.html#6">News_model</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#6">Dbfixture</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#19">Example</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="controllers/Pages.php.html#3">Pages</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="models/Ion_auth_model.php.html#759"><abbr title="Ion_auth_model::forgotten_password">forgotten_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#817"><abbr title="Ion_auth_model::forgotten_password_complete">forgotten_password_complete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#866"><abbr title="Ion_auth_model::register">register</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#951"><abbr title="Ion_auth_model::login">login</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#738"><abbr title="Ion_auth_model::identity_check">identity_check</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#714"><abbr title="Ion_auth_model::email_check">email_check</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#571"><abbr title="Ion_auth_model::reset_password">reset_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#631"><abbr title="Ion_auth_model::change_password">change_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#690"><abbr title="Ion_auth_model::username_check">username_check</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1032"><abbr title="Ion_auth_model::is_max_login_attempts_exceeded">is_max_login_attempts_exceeded</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1050"><abbr title="Ion_auth_model::get_attempts_num">get_attempts_num</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1141"><abbr title="Ion_auth_model::offset">offset</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1149"><abbr title="Ion_auth_model::where">where</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1163"><abbr title="Ion_auth_model::like">like</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1180"><abbr title="Ion_auth_model::select">select</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1133"><abbr title="Ion_auth_model::limit">limit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1120"><abbr title="Ion_auth_model::clear_login_attempts">clear_login_attempts</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1071"><abbr title="Ion_auth_model::is_time_locked_out">is_time_locked_out</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1082"><abbr title="Ion_auth_model::get_last_attempt_time">get_last_attempt_time</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1106"><abbr title="Ion_auth_model::increase_login_attempts">increase_login_attempts</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#541"><abbr title="Ion_auth_model::clear_forgotten_password_code">clear_forgotten_password_code</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#511"><abbr title="Ion_auth_model::deactivate">deactivate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2044"><abbr title="REST_Controller::_log_access_time">_log_access_time</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2062"><abbr title="REST_Controller::_log_response_code">_log_response_code</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2078"><abbr title="REST_Controller::_check_access">_check_access</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Seeder.php.html#17"><abbr title="Seeder::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2012"><abbr title="REST_Controller::_force_login">_force_login</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1982"><abbr title="REST_Controller::_check_whitelist_auth">_check_whitelist_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1862"><abbr title="REST_Controller::_prepare_basic_auth">_prepare_basic_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1903"><abbr title="REST_Controller::_prepare_digest_auth">_prepare_digest_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1960"><abbr title="REST_Controller::_check_blacklist_auth">_check_blacklist_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Seeder.php.html#31"><abbr title="Seeder::call">call</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Seeder.php.html#39"><abbr title="Seeder::__get">__get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#356"><abbr title="Ion_auth_model::hash_code">hash_code</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#369"><abbr title="Ion_auth_model::salt">salt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#445"><abbr title="Ion_auth_model::activate">activate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#295"><abbr title="Ion_auth_model::hash_password_db">hash_password_db</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#263"><abbr title="Ion_auth_model::hash_password">hash_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Temperature_converter.php.html#4"><abbr title="Temperature_converter::CtoF">CtoF</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Temperature_converter.php.html#8"><abbr title="Temperature_converter::FtoC">FtoC</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#164"><abbr title="Ion_auth_model::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1189"><abbr title="Ion_auth_model::order_by">order_by</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1199"><abbr title="Ion_auth_model::row">row</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2046"><abbr title="Ion_auth_model::set_message_delimiters">set_message_delimiters</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2062"><abbr title="Ion_auth_model::set_error_delimiters">set_error_delimiters</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2078"><abbr title="Ion_auth_model::set_message">set_message</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2095"><abbr title="Ion_auth_model::messages">messages</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2017"><abbr title="Ion_auth_model::trigger_events">trigger_events</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2005"><abbr title="Ion_auth_model::_call_hook">_call_hook</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1981"><abbr title="Ion_auth_model::set_hook">set_hook</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1989"><abbr title="Ion_auth_model::remove_hook">remove_hook</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1997"><abbr title="Ion_auth_model::remove_hooks">remove_hooks</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2115"><abbr title="Ion_auth_model::messages_array">messages_array</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2142"><abbr title="Ion_auth_model::clear_messages">clear_messages</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2246"><abbr title="Ion_auth_model::_prepare_ip">_prepare_ip</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/News_model.php.html#9"><abbr title="News_model::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/News_model.php.html#14"><abbr title="News_model::get_news">get_news</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/News_model.php.html#24"><abbr title="News_model::set_news">set_news</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2229"><abbr title="Ion_auth_model::_filter_data">_filter_data</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2220"><abbr title="Ion_auth_model::clear_errors">clear_errors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2158"><abbr title="Ion_auth_model::set_error">set_error</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2173"><abbr title="Ion_auth_model::errors">errors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2193"><abbr title="Ion_auth_model::errors_array">errors_array</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1942"><abbr title="Ion_auth_model::delete_group">delete_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1889"><abbr title="Ion_auth_model::update_group">update_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1371"><abbr title="Ion_auth_model::user">user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1393"><abbr title="Ion_auth_model::get_users_groups">get_users_groups</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1412"><abbr title="Ion_auth_model::add_to_group">add_to_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1455"><abbr title="Ion_auth_model::remove_from_group">remove_from_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1250"><abbr title="Ion_auth_model::users">users</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1235"><abbr title="Ion_auth_model::num_rows">num_rows</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1208"><abbr title="Ion_auth_model::row_array">row_array</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1217"><abbr title="Ion_auth_model::result">result</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1226"><abbr title="Ion_auth_model::result_array">result_array</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1500"><abbr title="Ion_auth_model::groups">groups</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1545"><abbr title="Ion_auth_model::group">group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1743"><abbr title="Ion_auth_model::remember_user">remember_user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1797"><abbr title="Ion_auth_model::login_remembered_user">login_remembered_user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1848"><abbr title="Ion_auth_model::create_group">create_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1717"><abbr title="Ion_auth_model::set_session">set_session</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1687"><abbr title="Ion_auth_model::set_lang">set_lang</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1566"><abbr title="Ion_auth_model::update">update</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1629"><abbr title="Ion_auth_model::delete_user">delete_user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1668"><abbr title="Ion_auth_model::update_last_login">update_last_login</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1840"><abbr title="REST_Controller::_check_php_session">_check_php_session</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1785"><abbr title="REST_Controller::_check_login">_check_login</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#39"><abbr title="Bcrypt::verify">verify</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#44"><abbr title="Bcrypt::getSalt">getSalt</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#61"><abbr title="Bcrypt::getRandomBytes">getRandomBytes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#105"><abbr title="Bcrypt::encodeBytes">encodeBytes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#24"><abbr title="Bcrypt::hash">hash</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#14"><abbr title="Bcrypt::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Pages.php.html#4"><abbr title="Pages::view">view</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Welcome.php.html#21"><abbr title="Welcome::index">index</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#117"><abbr title="Example::users_delete">users_delete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#134"><abbr title="Format::to_array">to_array</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#174"><abbr title="Format::to_xml">to_xml</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#487"><abbr title="Format::_from_csv">_from_csv</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#508"><abbr title="Format::_from_json">_from_json</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#5"><abbr title="Auth::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#473"><abbr title="Format::_from_xml">_from_xml</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#455"><abbr title="Format::to_php">to_php</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#257"><abbr title="Format::to_html">to_html</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#312"><abbr title="Format::to_csv">to_csv</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#436"><abbr title="Format::to_serialized">to_serialized</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#39"><abbr title="News::create">create</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#25"><abbr title="News::view">view</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#250"><abbr title="Auth::reset_password">reset_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#341"><abbr title="Auth::activate">activate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#367"><abbr title="Auth::deactivate">deactivate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#413"><abbr title="Auth::create_user">create_user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#179"><abbr title="Auth::forgot_password">forgot_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#111"><abbr title="Auth::change_password">change_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#18"><abbr title="Auth::index">index</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#48"><abbr title="Auth::login">login</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#98"><abbr title="Auth::logout">logout</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#523"><abbr title="Auth::edit_user">edit_user</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#674"><abbr title="Auth::create_group">create_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#18"><abbr title="Dbfixture::migrate">migrate</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#9"><abbr title="News::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/News.php.html#16"><abbr title="News::index">index</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#9"><abbr title="Dbfixture::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#809"><abbr title="Auth::_render_page">_render_page</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#721"><abbr title="Auth::edit_group">edit_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#785"><abbr title="Auth::_get_csrf_nonce">_get_csrf_nonce</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#796"><abbr title="Auth::_valid_csrf_nonce">_valid_csrf_nonce</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#526"><abbr title="Format::_from_php">_from_php</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#517"><abbr title="Format::_from_serialize">_from_serialize</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1377"><abbr title="REST_Controller::_parse_options">_parse_options</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1392"><abbr title="REST_Controller::_parse_patch">_parse_patch</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1415"><abbr title="REST_Controller::_parse_delete">_parse_delete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1362"><abbr title="REST_Controller::_parse_head">_parse_head</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1340"><abbr title="REST_Controller::_parse_put">_parse_put</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1023"><abbr title="REST_Controller::_log_request">_log_request</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1051"><abbr title="REST_Controller::_check_limit">_check_limit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1488"><abbr title="REST_Controller::options">options</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1507"><abbr title="REST_Controller::head">head</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1634"><abbr title="REST_Controller::validation_errors">validation_errors</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1651"><abbr title="REST_Controller::_perform_ldap_auth">_perform_ldap_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1746"><abbr title="REST_Controller::_perform_library_auth">_perform_library_auth</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1602"><abbr title="REST_Controller::query">query</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1583"><abbr title="REST_Controller::patch">patch</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1545"><abbr title="REST_Controller::put">put</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1564"><abbr title="REST_Controller::delete">delete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#57"><abbr title="Ion_auth::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#914"><abbr title="REST_Controller::_detect_api_key">_detect_api_key</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#472"><abbr title="Ion_auth::is_admin">is_admin</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#491"><abbr title="Ion_auth::in_group">in_group</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#198"><abbr title="Ion_auth::forgotten_password_complete">forgotten_password_complete</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#455"><abbr title="Ion_auth::get_user_id">get_user_id</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#263"><abbr title="Ion_auth::forgotten_password_check">forgotten_password_check</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#391"><abbr title="Ion_auth::logout">logout</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#442"><abbr title="Ion_auth::logged_in">logged_in</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#299"><abbr title="Ion_auth::register">register</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#137"><abbr title="Ion_auth::forgotten_password">forgotten_password</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#96"><abbr title="Ion_auth::__call">__call</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#538"><abbr title="REST_Controller::__destruct">__destruct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#124"><abbr title="Ion_auth::__get">__get</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1152"><abbr title="REST_Controller::_auth_override_check">_auth_override_check</a></a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#559"><abbr title="REST_Controller::_remap">_remap</a></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#988"><abbr title="REST_Controller::_detect_lang">_detect_lang</a></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#777"><abbr title="REST_Controller::_detect_input_format">_detect_input_format</a></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#811"><abbr title="REST_Controller::_detect_output_format">_detect_output_format</a></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#83"><abbr title="Format::__construct">__construct</a></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#682"><abbr title="REST_Controller::response">response</a></a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="libraries/Format.php.html#398"><abbr title="Format::to_json">to_json</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1324"><abbr title="REST_Controller::_parse_post">_parse_post</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#373"><abbr title="REST_Controller::__construct">__construct</a></a></td><td class="text-right">67%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1526"><abbr title="REST_Controller::post">post</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1469"><abbr title="REST_Controller::get">get</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#33"><abbr title="Example::users_get">users_get</a></a></td><td class="text-right">75%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="models/Ion_auth_model.php.html#1250"><abbr title="Ion_auth_model::users">users</abbr></a></td><td class="text-right">650</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1152"><abbr title="REST_Controller::_auth_override_check">_auth_override_check</abbr></a></td><td class="text-right">426</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#523"><abbr title="Auth::edit_user">edit_user</abbr></a></td><td class="text-right">420</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#559"><abbr title="REST_Controller::_remap">_remap</abbr></a></td><td class="text-right">378</td></tr>
+       <tr><td><a href="libraries/Format.php.html#174"><abbr title="Format::to_xml">to_xml</abbr></a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#369"><abbr title="Ion_auth_model::salt">salt</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1051"><abbr title="REST_Controller::_check_limit">_check_limit</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#866"><abbr title="Ion_auth_model::register">register</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#721"><abbr title="Auth::edit_group">edit_group</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#914"><abbr title="REST_Controller::_detect_api_key">_detect_api_key</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#61"><abbr title="Bcrypt::getRandomBytes">getRandomBytes</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="libraries/Format.php.html#312"><abbr title="Format::to_csv">to_csv</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1785"><abbr title="REST_Controller::_check_login">_check_login</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1651"><abbr title="REST_Controller::_perform_ldap_auth">_perform_ldap_auth</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1566"><abbr title="Ion_auth_model::update">update</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#413"><abbr title="Auth::create_user">create_user</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1500"><abbr title="Ion_auth_model::groups">groups</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1889"><abbr title="Ion_auth_model::update_group">update_group</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#295"><abbr title="Ion_auth_model::hash_password_db">hash_password_db</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1903"><abbr title="REST_Controller::_prepare_digest_auth">_prepare_digest_auth</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#759"><abbr title="Ion_auth_model::forgotten_password">forgotten_password</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#367"><abbr title="Auth::deactivate">deactivate</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#951"><abbr title="Ion_auth_model::login">login</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#811"><abbr title="REST_Controller::_detect_output_format">_detect_output_format</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#491"><abbr title="Ion_auth::in_group">in_group</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#179"><abbr title="Auth::forgot_password">forgot_password</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1455"><abbr title="Ion_auth_model::remove_from_group">remove_from_group</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#250"><abbr title="Auth::reset_password">reset_password</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#57"><abbr title="Ion_auth::__construct">__construct</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#299"><abbr title="Ion_auth::register">register</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#674"><abbr title="Auth::create_group">create_group</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Format.php.html#257"><abbr title="Format::to_html">to_html</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2017"><abbr title="Ion_auth_model::trigger_events">trigger_events</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Format.php.html#134"><abbr title="Format::to_array">to_array</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#391"><abbr title="Ion_auth::logout">logout</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1797"><abbr title="Ion_auth_model::login_remembered_user">login_remembered_user</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#263"><abbr title="Ion_auth_model::hash_password">hash_password</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1412"><abbr title="Ion_auth_model::add_to_group">add_to_group</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1862"><abbr title="REST_Controller::_prepare_basic_auth">_prepare_basic_auth</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#373"><abbr title="REST_Controller::__construct">__construct</abbr></a></td><td class="text-right">38</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1746"><abbr title="REST_Controller::_perform_library_auth">_perform_library_auth</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#18"><abbr title="Auth::index">index</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#817"><abbr title="Ion_auth_model::forgotten_password_complete">forgotten_password_complete</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#137"><abbr title="Ion_auth::forgotten_password">forgotten_password</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#198"><abbr title="Ion_auth::forgotten_password_complete">forgotten_password_complete</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1942"><abbr title="Ion_auth_model::delete_group">delete_group</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#111"><abbr title="Auth::change_password">change_password</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1082"><abbr title="Ion_auth_model::get_last_attempt_time">get_last_attempt_time</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2115"><abbr title="Ion_auth_model::messages_array">messages_array</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#445"><abbr title="Ion_auth_model::activate">activate</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2193"><abbr title="Ion_auth_model::errors_array">errors_array</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1050"><abbr title="Ion_auth_model::get_attempts_num">get_attempts_num</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#341"><abbr title="Auth::activate">activate</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#48"><abbr title="Auth::login">login</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#164"><abbr title="Ion_auth_model::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#631"><abbr title="Ion_auth_model::change_password">change_password</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2229"><abbr title="Ion_auth_model::_filter_data">_filter_data</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#571"><abbr title="Ion_auth_model::reset_password">reset_password</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1023"><abbr title="REST_Controller::_log_request">_log_request</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1743"><abbr title="Ion_auth_model::remember_user">remember_user</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1848"><abbr title="Ion_auth_model::create_group">create_group</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#96"><abbr title="Ion_auth::__call">__call</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#263"><abbr title="Ion_auth::forgotten_password_check">forgotten_password_check</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#682"><abbr title="REST_Controller::response">response</abbr></a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1032"><abbr title="Ion_auth_model::is_max_login_attempts_exceeded">is_max_login_attempts_exceeded</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2012"><abbr title="REST_Controller::_force_login">_force_login</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1982"><abbr title="REST_Controller::_check_whitelist_auth">_check_whitelist_auth</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2173"><abbr title="Ion_auth_model::errors">errors</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#541"><abbr title="Ion_auth_model::clear_forgotten_password_code">clear_forgotten_password_code</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#511"><abbr title="Ion_auth_model::deactivate">deactivate</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2005"><abbr title="Ion_auth_model::_call_hook">_call_hook</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#2095"><abbr title="Ion_auth_model::messages">messages</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1629"><abbr title="Ion_auth_model::delete_user">delete_user</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1545"><abbr title="REST_Controller::put">put</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Format.php.html#455"><abbr title="Format::to_php">to_php</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1488"><abbr title="REST_Controller::options">options</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1340"><abbr title="REST_Controller::_parse_put">_parse_put</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#105"><abbr title="Bcrypt::encodeBytes">encodeBytes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Format.php.html#436"><abbr title="Format::to_serialized">to_serialized</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/Format.php.html#487"><abbr title="Format::_from_csv">_from_csv</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1507"><abbr title="REST_Controller::head">head</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1392"><abbr title="REST_Controller::_parse_patch">_parse_patch</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1583"><abbr title="REST_Controller::patch">patch</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#809"><abbr title="Auth::_render_page">_render_page</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1602"><abbr title="REST_Controller::query">query</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="controllers/Auth.php.html#796"><abbr title="Auth::_valid_csrf_nonce">_valid_csrf_nonce</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1564"><abbr title="REST_Controller::delete">delete</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#777"><abbr title="REST_Controller::_detect_input_format">_detect_input_format</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#33"><abbr title="Example::users_get">users_get</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#988"><abbr title="REST_Controller::_detect_lang">_detect_lang</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="models/News_model.php.html#14"><abbr title="News_model::get_news">get_news</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#18"><abbr title="Dbfixture::migrate">migrate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1687"><abbr title="Ion_auth_model::set_lang">set_lang</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/Dbfixture.php.html#9"><abbr title="Dbfixture::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#24"><abbr title="Bcrypt::hash">hash</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1545"><abbr title="Ion_auth_model::group">group</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/api/Example.php.html#117"><abbr title="Example::users_delete">users_delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1997"><abbr title="Ion_auth_model::remove_hooks">remove_hooks</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/News.php.html#39"><abbr title="News::create">create</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/News.php.html#25"><abbr title="News::view">view</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1989"><abbr title="Ion_auth_model::remove_hook">remove_hook</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="controllers/Pages.php.html#4"><abbr title="Pages::view">view</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Bcrypt.php.html#14"><abbr title="Bcrypt::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1163"><abbr title="Ion_auth_model::like">like</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#738"><abbr title="Ion_auth_model::identity_check">identity_check</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#538"><abbr title="REST_Controller::__destruct">__destruct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Format.php.html#473"><abbr title="Format::_from_xml">_from_xml</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#714"><abbr title="Ion_auth_model::email_check">email_check</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#690"><abbr title="Ion_auth_model::username_check">username_check</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#2078"><abbr title="REST_Controller::_check_access">_check_access</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1840"><abbr title="REST_Controller::_check_php_session">_check_php_session</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1415"><abbr title="REST_Controller::_parse_delete">_parse_delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Ion_auth.php.html#455"><abbr title="Ion_auth::get_user_id">get_user_id</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1071"><abbr title="Ion_auth_model::is_time_locked_out">is_time_locked_out</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1960"><abbr title="REST_Controller::_check_blacklist_auth">_check_blacklist_auth</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1106"><abbr title="Ion_auth_model::increase_login_attempts">increase_login_attempts</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1371"><abbr title="Ion_auth_model::user">user</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1149"><abbr title="Ion_auth_model::where">where</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1393"><abbr title="Ion_auth_model::get_users_groups">get_users_groups</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="models/Ion_auth_model.php.html#1120"><abbr title="Ion_auth_model::clear_login_attempts">clear_login_attempts</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="libraries/Format.php.html#398"><abbr title="Format::to_json">to_json</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="libraries/Format.php.html#83"><abbr title="Format::__construct">__construct</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1526"><abbr title="REST_Controller::post">post</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1469"><abbr title="REST_Controller::get">get</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="libraries/REST_Controller.php.html#1324"><abbr title="REST_Controller::_parse_post">_parse_post</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.3</a> using <a href="http://php.net/" target="_top">PHP 5.5.38</a> and <a href="http://phpunit.de/">PHPUnit 4.8.10</a> at Thu Oct 6 17:16:27 ICT 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.min.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([11,1,0,1,0,0,0,1,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([158,1,0,2,2,0,1,4,3,0,1,8], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,101,"<a href=\"controllers\/Auth.php.html#3\">Auth<\/a>"],[0,4,"<a href=\"controllers\/Dbfixture.php.html#6\">Dbfixture<\/a>"],[0,6,"<a href=\"controllers\/News.php.html#6\">News<\/a>"],[0,2,"<a href=\"controllers\/Pages.php.html#3\">Pages<\/a>"],[0,1,"<a href=\"controllers\/Welcome.php.html#4\">Welcome<\/a>"],[68.421052631579,13,"<a href=\"controllers\/api\/Example.php.html#19\">Example<\/a>"],[0,20,"<a href=\"libraries\/Bcrypt.php.html#4\">Bcrypt<\/a>"],[8.8757396449704,66,"<a href=\"libraries\/Format.php.html#12\">Format<\/a>"],[0,51,"<a href=\"libraries\/Ion_auth.php.html#22\">Ion_auth<\/a>"],[22.323759791123,247,"<a href=\"libraries\/REST_Controller.php.html#17\">REST_Controller<\/a>"],[0,3,"<a href=\"libraries\/Seeder.php.html#11\">Seeder<\/a>"],[0,2,"<a href=\"libraries\/Temperature_converter.php.html#3\">Temperature_converter<\/a>"],[0,266,"<a href=\"models\/Ion_auth_model.php.html#22\">Ion_auth_model<\/a>"],[0,4,"<a href=\"models\/News_model.php.html#6\">News_model<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"controllers\/Auth.php.html#5\">Auth::__construct<\/a>"],[0,5,"<a href=\"controllers\/Auth.php.html#18\">Auth::index<\/a>"],[0,4,"<a href=\"controllers\/Auth.php.html#48\">Auth::login<\/a>"],[0,1,"<a href=\"controllers\/Auth.php.html#98\">Auth::logout<\/a>"],[0,5,"<a href=\"controllers\/Auth.php.html#111\">Auth::change_password<\/a>"],[0,8,"<a href=\"controllers\/Auth.php.html#179\">Auth::forgot_password<\/a>"],[0,8,"<a href=\"controllers\/Auth.php.html#250\">Auth::reset_password<\/a>"],[0,4,"<a href=\"controllers\/Auth.php.html#341\">Auth::activate<\/a>"],[0,9,"<a href=\"controllers\/Auth.php.html#367\">Auth::deactivate<\/a>"],[0,10,"<a href=\"controllers\/Auth.php.html#413\">Auth::create_user<\/a>"],[0,20,"<a href=\"controllers\/Auth.php.html#523\">Auth::edit_user<\/a>"],[0,7,"<a href=\"controllers\/Auth.php.html#674\">Auth::create_group<\/a>"],[0,12,"<a href=\"controllers\/Auth.php.html#721\">Auth::edit_group<\/a>"],[0,1,"<a href=\"controllers\/Auth.php.html#785\">Auth::_get_csrf_nonce<\/a>"],[0,3,"<a href=\"controllers\/Auth.php.html#796\">Auth::_valid_csrf_nonce<\/a>"],[0,3,"<a href=\"controllers\/Auth.php.html#809\">Auth::_render_page<\/a>"],[0,2,"<a href=\"controllers\/Dbfixture.php.html#9\">Dbfixture::__construct<\/a>"],[0,2,"<a href=\"controllers\/Dbfixture.php.html#18\">Dbfixture::migrate<\/a>"],[0,1,"<a href=\"controllers\/News.php.html#9\">News::__construct<\/a>"],[0,1,"<a href=\"controllers\/News.php.html#16\">News::index<\/a>"],[0,2,"<a href=\"controllers\/News.php.html#25\">News::view<\/a>"],[0,2,"<a href=\"controllers\/News.php.html#39\">News::create<\/a>"],[0,2,"<a href=\"controllers\/Pages.php.html#4\">Pages::view<\/a>"],[0,1,"<a href=\"controllers\/Welcome.php.html#21\">Welcome::index<\/a>"],[100,1,"<a href=\"controllers\/api\/Example.php.html#21\">Example::__construct<\/a>"],[75.675675675676,9,"<a href=\"controllers\/api\/Example.php.html#33\">Example::users_get<\/a>"],[100,1,"<a href=\"controllers\/api\/Example.php.html#104\">Example::users_post<\/a>"],[0,2,"<a href=\"controllers\/api\/Example.php.html#117\">Example::users_delete<\/a>"],[0,2,"<a href=\"libraries\/Bcrypt.php.html#14\">Bcrypt::__construct<\/a>"],[0,2,"<a href=\"libraries\/Bcrypt.php.html#24\">Bcrypt::hash<\/a>"],[0,1,"<a href=\"libraries\/Bcrypt.php.html#39\">Bcrypt::verify<\/a>"],[0,1,"<a href=\"libraries\/Bcrypt.php.html#44\">Bcrypt::getSalt<\/a>"],[0,11,"<a href=\"libraries\/Bcrypt.php.html#61\">Bcrypt::getRandomBytes<\/a>"],[0,3,"<a href=\"libraries\/Bcrypt.php.html#105\">Bcrypt::encodeBytes<\/a>"],[50,3,"<a href=\"libraries\/Format.php.html#83\">Format::__construct<\/a>"],[100,1,"<a href=\"libraries\/Format.php.html#117\">Format::factory<\/a>"],[0,7,"<a href=\"libraries\/Format.php.html#134\">Format::to_array<\/a>"],[0,18,"<a href=\"libraries\/Format.php.html#174\">Format::to_xml<\/a>"],[0,7,"<a href=\"libraries\/Format.php.html#257\">Format::to_html<\/a>"],[0,11,"<a href=\"libraries\/Format.php.html#312\">Format::to_csv<\/a>"],[66.666666666667,5,"<a href=\"libraries\/Format.php.html#398\">Format::to_json<\/a>"],[0,3,"<a href=\"libraries\/Format.php.html#436\">Format::to_serialized<\/a>"],[0,3,"<a href=\"libraries\/Format.php.html#455\">Format::to_php<\/a>"],[0,2,"<a href=\"libraries\/Format.php.html#473\">Format::_from_xml<\/a>"],[0,3,"<a href=\"libraries\/Format.php.html#487\">Format::_from_csv<\/a>"],[0,1,"<a href=\"libraries\/Format.php.html#508\">Format::_from_json<\/a>"],[0,1,"<a href=\"libraries\/Format.php.html#517\">Format::_from_serialize<\/a>"],[0,1,"<a href=\"libraries\/Format.php.html#526\">Format::_from_php<\/a>"],[0,7,"<a href=\"libraries\/Ion_auth.php.html#57\">Ion_auth::__construct<\/a>"],[0,4,"<a href=\"libraries\/Ion_auth.php.html#96\">Ion_auth::__call<\/a>"],[0,1,"<a href=\"libraries\/Ion_auth.php.html#124\">Ion_auth::__get<\/a>"],[0,5,"<a href=\"libraries\/Ion_auth.php.html#137\">Ion_auth::forgotten_password<\/a>"],[0,5,"<a href=\"libraries\/Ion_auth.php.html#198\">Ion_auth::forgotten_password_complete<\/a>"],[0,4,"<a href=\"libraries\/Ion_auth.php.html#263\">Ion_auth::forgotten_password_check<\/a>"],[0,7,"<a href=\"libraries\/Ion_auth.php.html#299\">Ion_auth::register<\/a>"],[0,6,"<a href=\"libraries\/Ion_auth.php.html#391\">Ion_auth::logout<\/a>"],[0,1,"<a href=\"libraries\/Ion_auth.php.html#442\">Ion_auth::logged_in<\/a>"],[0,2,"<a href=\"libraries\/Ion_auth.php.html#455\">Ion_auth::get_user_id<\/a>"],[0,1,"<a href=\"libraries\/Ion_auth.php.html#472\">Ion_auth::is_admin<\/a>"],[0,8,"<a href=\"libraries\/Ion_auth.php.html#491\">Ion_auth::in_group<\/a>"],[100,1,"<a href=\"libraries\/REST_Controller.php.html#361\">REST_Controller::early_checks<\/a>"],[67.441860465116,22,"<a href=\"libraries\/REST_Controller.php.html#373\">REST_Controller::__construct<\/a>"],[0,2,"<a href=\"libraries\/REST_Controller.php.html#538\">REST_Controller::__destruct<\/a>"],[25.352112676056,29,"<a href=\"libraries\/REST_Controller.php.html#559\">REST_Controller::_remap<\/a>"],[64.864864864865,12,"<a href=\"libraries\/REST_Controller.php.html#682\">REST_Controller::response<\/a>"],[100,1,"<a href=\"libraries\/REST_Controller.php.html#766\">REST_Controller::set_response<\/a>"],[36.363636363636,5,"<a href=\"libraries\/REST_Controller.php.html#777\">REST_Controller::_detect_input_format<\/a>"],[36.363636363636,15,"<a href=\"libraries\/REST_Controller.php.html#811\">REST_Controller::_detect_output_format<\/a>"],[100,6,"<a href=\"libraries\/REST_Controller.php.html#882\">REST_Controller::_detect_method<\/a>"],[0,11,"<a href=\"libraries\/REST_Controller.php.html#914\">REST_Controller::_detect_api_key<\/a>"],[28.571428571429,4,"<a href=\"libraries\/REST_Controller.php.html#988\">REST_Controller::_detect_lang<\/a>"],[0,4,"<a href=\"libraries\/REST_Controller.php.html#1023\">REST_Controller::_log_request<\/a>"],[0,15,"<a href=\"libraries\/REST_Controller.php.html#1051\">REST_Controller::_check_limit<\/a>"],[8.641975308642,23,"<a href=\"libraries\/REST_Controller.php.html#1152\">REST_Controller::_auth_override_check<\/a>"],[100,1,"<a href=\"libraries\/REST_Controller.php.html#1312\">REST_Controller::_parse_get<\/a>"],[66.666666666667,2,"<a href=\"libraries\/REST_Controller.php.html#1324\">REST_Controller::_parse_post<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1340\">REST_Controller::_parse_put<\/a>"],[0,1,"<a href=\"libraries\/REST_Controller.php.html#1362\">REST_Controller::_parse_head<\/a>"],[0,1,"<a href=\"libraries\/REST_Controller.php.html#1377\">REST_Controller::_parse_options<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1392\">REST_Controller::_parse_patch<\/a>"],[0,2,"<a href=\"libraries\/REST_Controller.php.html#1415\">REST_Controller::_parse_delete<\/a>"],[92.307692307692,2,"<a href=\"libraries\/REST_Controller.php.html#1430\">REST_Controller::_parse_query<\/a>"],[75,3,"<a href=\"libraries\/REST_Controller.php.html#1469\">REST_Controller::get<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1488\">REST_Controller::options<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1507\">REST_Controller::head<\/a>"],[75,3,"<a href=\"libraries\/REST_Controller.php.html#1526\">REST_Controller::post<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1545\">REST_Controller::put<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1564\">REST_Controller::delete<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1583\">REST_Controller::patch<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1602\">REST_Controller::query<\/a>"],[100,3,"<a href=\"libraries\/REST_Controller.php.html#1621\">REST_Controller::_xss_clean<\/a>"],[0,1,"<a href=\"libraries\/REST_Controller.php.html#1634\">REST_Controller::validation_errors<\/a>"],[0,10,"<a href=\"libraries\/REST_Controller.php.html#1651\">REST_Controller::_perform_ldap_auth<\/a>"],[0,5,"<a href=\"libraries\/REST_Controller.php.html#1746\">REST_Controller::_perform_library_auth<\/a>"],[0,10,"<a href=\"libraries\/REST_Controller.php.html#1785\">REST_Controller::_check_login<\/a>"],[0,2,"<a href=\"libraries\/REST_Controller.php.html#1840\">REST_Controller::_check_php_session<\/a>"],[0,6,"<a href=\"libraries\/REST_Controller.php.html#1862\">REST_Controller::_prepare_basic_auth<\/a>"],[0,9,"<a href=\"libraries\/REST_Controller.php.html#1903\">REST_Controller::_prepare_digest_auth<\/a>"],[0,2,"<a href=\"libraries\/REST_Controller.php.html#1960\">REST_Controller::_check_blacklist_auth<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#1982\">REST_Controller::_check_whitelist_auth<\/a>"],[0,3,"<a href=\"libraries\/REST_Controller.php.html#2012\">REST_Controller::_force_login<\/a>"],[0,1,"<a href=\"libraries\/REST_Controller.php.html#2044\">REST_Controller::_log_access_time<\/a>"],[0,1,"<a href=\"libraries\/REST_Controller.php.html#2062\">REST_Controller::_log_response_code<\/a>"],[0,2,"<a href=\"libraries\/REST_Controller.php.html#2078\">REST_Controller::_check_access<\/a>"],[0,1,"<a href=\"libraries\/Seeder.php.html#17\">Seeder::__construct<\/a>"],[0,1,"<a href=\"libraries\/Seeder.php.html#31\">Seeder::call<\/a>"],[0,1,"<a href=\"libraries\/Seeder.php.html#39\">Seeder::__get<\/a>"],[0,1,"<a href=\"libraries\/Temperature_converter.php.html#4\">Temperature_converter::CtoF<\/a>"],[0,1,"<a href=\"libraries\/Temperature_converter.php.html#8\">Temperature_converter::FtoC<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#164\">Ion_auth_model::__construct<\/a>"],[0,6,"<a href=\"models\/Ion_auth_model.php.html#263\">Ion_auth_model::hash_password<\/a>"],[0,9,"<a href=\"models\/Ion_auth_model.php.html#295\">Ion_auth_model::hash_password_db<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#356\">Ion_auth_model::hash_code<\/a>"],[0,15,"<a href=\"models\/Ion_auth_model.php.html#369\">Ion_auth_model::salt<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#445\">Ion_auth_model::activate<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#511\">Ion_auth_model::deactivate<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#541\">Ion_auth_model::clear_forgotten_password_code<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#571\">Ion_auth_model::reset_password<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#631\">Ion_auth_model::change_password<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#690\">Ion_auth_model::username_check<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#714\">Ion_auth_model::email_check<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#738\">Ion_auth_model::identity_check<\/a>"],[0,9,"<a href=\"models\/Ion_auth_model.php.html#759\">Ion_auth_model::forgotten_password<\/a>"],[0,5,"<a href=\"models\/Ion_auth_model.php.html#817\">Ion_auth_model::forgotten_password_complete<\/a>"],[0,14,"<a href=\"models\/Ion_auth_model.php.html#866\">Ion_auth_model::register<\/a>"],[0,9,"<a href=\"models\/Ion_auth_model.php.html#951\">Ion_auth_model::login<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#1032\">Ion_auth_model::is_max_login_attempts_exceeded<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#1050\">Ion_auth_model::get_attempts_num<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1071\">Ion_auth_model::is_time_locked_out<\/a>"],[0,5,"<a href=\"models\/Ion_auth_model.php.html#1082\">Ion_auth_model::get_last_attempt_time<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1106\">Ion_auth_model::increase_login_attempts<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1120\">Ion_auth_model::clear_login_attempts<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1133\">Ion_auth_model::limit<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1141\">Ion_auth_model::offset<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1149\">Ion_auth_model::where<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1163\">Ion_auth_model::like<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1180\">Ion_auth_model::select<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1189\">Ion_auth_model::order_by<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1199\">Ion_auth_model::row<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1208\">Ion_auth_model::row_array<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1217\">Ion_auth_model::result<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1226\">Ion_auth_model::result_array<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1235\">Ion_auth_model::num_rows<\/a>"],[0,25,"<a href=\"models\/Ion_auth_model.php.html#1250\">Ion_auth_model::users<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1371\">Ion_auth_model::user<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1393\">Ion_auth_model::get_users_groups<\/a>"],[0,6,"<a href=\"models\/Ion_auth_model.php.html#1412\">Ion_auth_model::add_to_group<\/a>"],[0,8,"<a href=\"models\/Ion_auth_model.php.html#1455\">Ion_auth_model::remove_from_group<\/a>"],[0,9,"<a href=\"models\/Ion_auth_model.php.html#1500\">Ion_auth_model::groups<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1545\">Ion_auth_model::group<\/a>"],[0,10,"<a href=\"models\/Ion_auth_model.php.html#1566\">Ion_auth_model::update<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#1629\">Ion_auth_model::delete_user<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1668\">Ion_auth_model::update_last_login<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1687\">Ion_auth_model::set_lang<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1717\">Ion_auth_model::set_session<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#1743\">Ion_auth_model::remember_user<\/a>"],[0,6,"<a href=\"models\/Ion_auth_model.php.html#1797\">Ion_auth_model::login_remembered_user<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#1848\">Ion_auth_model::create_group<\/a>"],[0,9,"<a href=\"models\/Ion_auth_model.php.html#1889\">Ion_auth_model::update_group<\/a>"],[0,5,"<a href=\"models\/Ion_auth_model.php.html#1942\">Ion_auth_model::delete_group<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#1981\">Ion_auth_model::set_hook<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1989\">Ion_auth_model::remove_hook<\/a>"],[0,2,"<a href=\"models\/Ion_auth_model.php.html#1997\">Ion_auth_model::remove_hooks<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#2005\">Ion_auth_model::_call_hook<\/a>"],[0,7,"<a href=\"models\/Ion_auth_model.php.html#2017\">Ion_auth_model::trigger_events<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2046\">Ion_auth_model::set_message_delimiters<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2062\">Ion_auth_model::set_error_delimiters<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2078\">Ion_auth_model::set_message<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#2095\">Ion_auth_model::messages<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#2115\">Ion_auth_model::messages_array<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2142\">Ion_auth_model::clear_messages<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2158\">Ion_auth_model::set_error<\/a>"],[0,3,"<a href=\"models\/Ion_auth_model.php.html#2173\">Ion_auth_model::errors<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#2193\">Ion_auth_model::errors_array<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2220\">Ion_auth_model::clear_errors<\/a>"],[0,4,"<a href=\"models\/Ion_auth_model.php.html#2229\">Ion_auth_model::_filter_data<\/a>"],[0,1,"<a href=\"models\/Ion_auth_model.php.html#2246\">Ion_auth_model::_prepare_ip<\/a>"],[0,1,"<a href=\"models\/News_model.php.html#9\">News_model::__construct<\/a>"],[0,2,"<a href=\"models\/News_model.php.html#14\">News_model::get_news<\/a>"],[0,1,"<a href=\"models\/News_model.php.html#24\">News_model::set_news<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Example_test" file="/Users/him_aeng/Sites/CITest/application/tests/controllers/api/Example_test.php" tests="3" assertions="8" failures="0" errors="0" time="0.158093">
+    <testcase name="test_When_get_valid_user_id_Then_returns_the_user_data" class="Example_test" file="/Users/him_aeng/Sites/CITest/application/tests/controllers/api/Example_test.php" line="9" assertions="4" time="0.077780"/>
+    <testcase name="test_When_get_not_found_user_id_Then_returns_error" class="Example_test" file="/Users/him_aeng/Sites/CITest/application/tests/controllers/api/Example_test.php" line="18" assertions="2" time="0.038771"/>
+    <testcase name="test_When_post_user_data_Then_returns_created" class="Example_test" file="/Users/him_aeng/Sites/CITest/application/tests/controllers/api/Example_test.php" line="25" assertions="2" time="0.041542"/>
+  </testsuite>
+</testsuites>
